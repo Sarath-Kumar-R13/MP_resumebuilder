@@ -118,7 +118,7 @@
       
                     </div>
                             <div class="pro-btn">
-                                <button type="button" onclick="addProjectRow()">Add Project</button>
+                                <button type="button" onclick="addProjectRow()">ADD PROJECTS</button>
                             </div>
                 </div>
                 <div class="pro-d5">
@@ -127,7 +127,7 @@
 
                         </div>
                             <div class="pro-btn2">
-                                <button type="button" onclick="addSkillRow()">Add Skills</button>
+                                <button type="button" onclick="addSkillRow()">ADD SKILLS</button>
                             </div>
                 </div>
                  <div class="pro-d6">
@@ -156,7 +156,7 @@
                     <h3>CERTIFICATES</h3>
                     <div class="pro-crt">
                         <label for="certificates"></label>
-                        <textarea placeholder="Your Credentials" name="certificates" id="certificates" minlength="500" required></textarea>
+                        <textarea placeholder="Your Credentials..." name="certificates" id="certificates" minlength="500" required></textarea>
                     </div>
                 </div><br>
 
@@ -176,7 +176,7 @@
                         <input type="date" name="to-date" id="to-date" required> -->
                     </div>
                         <div class="btn-edu">
-                            <button type="button" onclick="addEduRow()">Add Education</button>
+                            <button type="button" onclick="addEduRow()">ADD EDUCATION</button>
                         </div>
                 </div>
         </fieldset>
@@ -192,7 +192,7 @@
             <br><br>
                     <textarea name="description[]" placeholder="Brief description..."></textarea>
                 <br>
-                    <button type="button" onclick="deleteRow(this)">Delete Project</button>
+                    <button type="button" onclick="deleteRow(this)">DELETE</button>
                     `;
                 rows.appendChild(newRow);
     }
@@ -207,7 +207,7 @@
             const newRow = document.createElement('div');
                 newRow.innerHTML = `
                     <input type="text" name="skill[]" placeholder="Skills:">
-                    <button type="button" onclick="deleteSkillRow(this)">Delete Skill</button>
+                    <button type="button" onclick="deleteSkillRow(this)">DELETE</button>
                     `;
                     Trows.appendChild(newRow);
     }
@@ -231,7 +231,7 @@
                         <label for="to-date">To:</label>
                         <input type="date" name="to-date" id="to-date" required>
                     <br>
-                        <button type="button" onclick="deleteEdu(this)">Delete</button>
+                        <button type="button" onclick="deleteEdu(this)">DELETE</button>
                         `;
                         proEdu.appendChild(newRow);
     }
