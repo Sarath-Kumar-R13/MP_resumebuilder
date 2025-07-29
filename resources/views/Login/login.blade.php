@@ -15,8 +15,8 @@
                     <li>{{$error}}</li>
                     @endforeach
                 </ul>
-            </div>
-         @endif
+            </div> 
+        @endif
             <form action="{{route('login')}}" method="POST">
                 @csrf
                 <div>

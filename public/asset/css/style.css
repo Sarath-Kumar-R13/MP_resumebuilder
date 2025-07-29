@@ -88,7 +88,7 @@
   background-color:  rgb(166, 11, 11);
   color: white;
   cursor : pointer;
-  filter:drop-shadow(10px 15px  5px rgba(212, 7, 7, 0.658));;
+  filter:drop-shadow(10px 15px  5px rgba(212, 7, 7, 0.658));
 }
 .cv-img{
     float: right;
@@ -266,10 +266,12 @@ nav {
 }
 
 
+
 .Reg-btn, .log-btn {
   padding: 10px 20px;
   font-size: 12px;
   font-weight: bold;
+  text-decoration: none;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
@@ -293,11 +295,10 @@ nav {
   border-radius: 5px;
 }
 
-.Reg-btn:hover {
+.Reg-btn:hover  {
   background-color:  rgb(166, 11, 11);
   color: white;
 }
-
 .log-btn:hover {
   background-color:  rgb(166, 11, 11);
   color: white;

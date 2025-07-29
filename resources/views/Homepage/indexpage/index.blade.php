@@ -48,8 +48,12 @@
         <li class="link"><a href="#">LANG</a></li>
         
       </ul>
-      <button class="Reg-btn"><a href="{{route('register')}}">REGISTER</button>
-      <button class="log-btn"><a href="{{route('login')}}">LOG IN</button>
+      <!-- <button class="Reg-btn">
+        <a href="{{route('register')}}">REGISTER</a></button>
+      <button class="log-btn">
+        <a href="{{route('login')}}">LOG IN</a></button> -->
+        <a href="{{ route('register') }}" class="Reg-btn">REGISTER</a>
+        <a href="{{ route('login') }}" class="log-btn">LOG IN</a>
     </nav>
     </header>
     <section class="header-section">
