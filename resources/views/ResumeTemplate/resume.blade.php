@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="{{ asset('asset/css/resume.css') }}">
+
+     <link href="https://fonts.cdnfonts.com/css/freesans-2" rel="stylesheet">
+     <link href="https://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
+                          
     <title>Resume template</title>
 </head>
 <body>

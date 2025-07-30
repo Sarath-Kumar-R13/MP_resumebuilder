@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('asset/css/register.css') }}">
+     <link href="https://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
         @endif
         <form method="POST" action="{{url('register')}}">
             @csrf
-        <fieldset><legend>REGISTER NOW</legend>
+        <fieldset><legend style="text-align:center";>REGISTER NOW</legend>
             <label for="name" >Name:</label>
             <input type="text" placeholder="Full Name"  id='name' name='name' minlength='5' required/><br><br>
 

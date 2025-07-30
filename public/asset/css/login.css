@@ -1,43 +1,45 @@
-@import url('https://fonts.cdnfonts.com/css/verdana-pro-cond');
-
 form {
-  max-width: 400px;
-  margin: 32px auto;
+  max-width: 900px;
+  margin: 16px auto;
   padding: 31px;
-  color: hsla(205, 76%, 79%, 0.833);
-  /* background: bisque; */
-  background-image: url('../Images/PROJECT_IMAGES/registerimg.webp');
+  background: hsl(0, 2%, 13%);
+  background-image: url('../Images/PROJECT_IMAGES/login.jpg');
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Verdana Pro SemiBold', sans-serif; 
+  font-family: 'Verdana Pro SemiBold', sans-serif;
+  color: rgba(7, 198, 251, 0.642);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  text-align: center;
+
+
+  
 }
 legend {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 600;
-  color: rgb(9, 45, 95);
+  color: rgb(157, 25, 25);
   margin-bottom: 24px;
 }
-input[type="text"],
 input[type="email"],
-input[type="date"],
-input[type="number"],
-input[type="file"],
+input[type="password"],
 textarea {
   width: 100%;
   padding: 0.1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 16px;
   transition: border-color 0.3s ease;
 }
-
 input:focus,
 textarea:focus {
   border-color: #0077cc;
   outline: none;
 }
 button {
-  background-color: #0077cc;
+  background-color: rgb(0, 119, 204);
   color: white;
   padding: 0.6rem 1.2rem;
   width: 130px;
@@ -50,5 +52,6 @@ button {
 }
 
 button:hover {
-  background-color: #005fa3;
+  background-color: rgb(0, 92, 157);
+  text-align: center;
 }
