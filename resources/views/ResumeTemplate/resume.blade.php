@@ -39,23 +39,18 @@
                         <textarea name="description" placeholder="Write a short description here..." id="description" required/></textarea>
                     </div><br>
 
-                </div><br>
-
-                <div class="pro-d2">
-                    <h3>ADDITIONAL INFORMATION</h3> 
-
                     <div class="pro-Em">
                         <label for="email">Email:</label>
                         <input type="email" placeholder="Email ID" id="email" name="email" required/>
                     </div><br>
 
-                   <div class="pro-Pn">
+                     <div class="pro-Pn">
                         <label for="phone">Phone No:</label>
                         <!-- <input type="text" placeholder="Phone Number" name="phone" id="phone"  minlength='10' required/> -->
                          <input type="number" placeholder="Phone Number" name="phone" id="phone" minlength='10' required/>
                    </div><br>
 
-                   <div class="pro-Lc">
+                    <div class="pro-Lc">
                         <label for="location">Location:</label>
                         <input type="text" placeholder="Location" name="location" id="location" required/>
                    </div><br>
@@ -67,12 +62,19 @@
 
                 </div><br>
 
-                <div class="pro-d3">
+            
+
+                <div class="pro-d2">
 
                 
                         <h3>WORK EXPERIENCE</h3>
+                        <div id="WERows">
 
-                    <div class="pro-Ps">
+                        </div>
+                            <div class="pro-btn4">
+                            <button type="button" onclick="addWERow()">ADD WORK EXPERIENCE</button>
+                            </div>
+                    <!-- <div class="pro-Ps">
                         <label for="position">Position:</label>
                         <input type="text" placeholder="position" name="position" id="position" required/>
                     </div><br>
@@ -87,32 +89,29 @@
                         <input type="date" name="from-date" id="from-date" required/>
 
                         <label for="to-date">To:</label>
-                        <input type="date" name="to-date" id="to-date" required/>
+                        <input type="date" name="to-date" id="to-date" required/> - -->
 
-                        <input type="checkbox" placeholder="Present" name="date" id="date"/> 
-                    </div><br> 
+                        <!-- <input type="checkbox" placeholder="Present" name="date" id="date"/>  -->
+                    <!-- </div><br>  -->
 
-                    <div class="pro-I">
-                        <label for="currently doing">Currently Doing:</label>
-                        <input type="text" placeholder="Job/Intership/Course" name="currently doing" id="currently doing" />
-                    </div><br>
+                    
 
-                    <div class="pro-loc">
+                    <!-- <div class="pro-loc">
                         <label for="work location">Work Location:</label>
-                        <input type="text" placeholder="Work Location" name="work location" id="work location" />
-                    </div>
+                        <input type="text" placeholder="Work Location" name="work_location" id="work location" />
+                    </div> -->
                 </div><br>
 
-                <!-- <div class="pro-d4">
+                <div class="pro-d4">
                     <h3>ACHIEVEMENTS</h3>
 
                     <div class="pro-ach">
                         <label for="achievements"></label>
-                        <textarea placeholder="Major accomplishments in professional your life" name="achievements" id="achievements"></textarea>
+                        <textarea placeholder="Major accomplishments in professional your life" name="achievements" required></textarea>
                     </div>
-                </div><br> -->
+                </div><br>
 
-               <div class="pro-d4">
+               <div class="pro-d3">
                     <h3>PERSONAL PROJECTS</h3>
                     <div id="rows">
 
@@ -125,7 +124,7 @@
                                 <button type="button" onclick="addProjectRow()">ADD PROJECTS</button>
                             </div>
                 </div>
-                <div class="pro-d5">
+                <div class="pro-d4">
                     <h3>TECHNICAL SKILLS</h3>
                         <div id="Trows">
 
@@ -134,16 +133,16 @@
                                 <button type="button" onclick="addSkillRow()">ADD SKILLS</button>
                             </div>
                 </div>
-                 <div class="pro-d6">
+                 <div class="pro-d5">
                     <h3>ACHIEVEMENTS</h3>
 
                     <div class="pro-ach">
                         <label for="achievements"></label>
-                        <textarea placeholder="Major accomplishments in professional your life" name="achievements" id="achievements" minlength="500" required></textarea>
+                        <textarea placeholder="Major accomplishments in professional your life..." name="achievements" id="achievements" minlength="500" required></textarea>
                     </div>
                 </div><br>
 
-                <div class="pro-d7">
+                <div class="pro-d6">
                     <h3>ORGANIZATIONS</h3>
                         <div class="pro-org">
                             <label for="organizations"></label>
@@ -156,7 +155,7 @@
                             <input type="date" name="to-date" id="to-date" required>
                         </div>
                 </div>
-                <div class="pro-d8">
+                <div class="pro-d7">
                     <h3>CERTIFICATES</h3>
                     <div class="pro-crt">
                         <label for="certificates"></label>
@@ -164,7 +163,7 @@
                     </div>
                 </div><br>
 
-                <div class="pro-d9">
+                <div class="pro-d8">
                     <h3>EDUCATION</h3>
                     <div id="proEdu">
                         <!-- <label for="education">Graduation/Post-Graduation/Diploma:</label>
@@ -183,18 +182,56 @@
                             <button type="button" onclick="addEduRow()">ADD EDUCATION</button>
                         </div>
                 </div>
+
+                <div class="pro-d9">
+                    <h3>LANGUAGES</h3>
+                    <div id="Lrows">
+
+                    </div>
+                        <div class="pro-btn3">
+                            <button type="button" onclick="addLangRow()">ADD LANGUAGE</button>
+                        </div>
+                </div>
+                <button class='pro-btnS' type="submit"><span>SUBMIT</span></button>
         </fieldset>
     </form>
     </div>
     <script>
+    //====================================Work Experience section function=====================================//
+    function addWERow(){
+        const WERows=document.getElementById('WERows');
+            const newRow=document.createElement('div');
+                newRow.innerHTML=`
+                                <label for="position">Position:</label>
+                                <input type="text" placeholder="position" name="position[]" required/>
+
+                                <label for="company">Company:</label>
+                                <input type="text" placeholder="company" name="company[]" required/>
+
+                                <label for="from-date">From:</label>
+                                <input type="date" name="from_date[]" required/>
+
+                                <label for="to-date">To:</label>
+                                <input type="date" name="to_date[]" required/>
+                                
+                                <label for="work location">Work Location:</label>
+                                <input type="text" placeholder="Work Location" name="work_location[]" required/>
+
+                                <button type="button" onclick="deleteWERow(this)">DELETE</button>
+                                `;
+                            WERows.appendChild(newRow);
+    }
+   function deleteWERow(button) {
+        button.parentElement.remove();
+    }
     //====================================Project section function============================================//
     function addProjectRow() {
         const rows = document.getElementById('rows');
             const newRow = document.createElement('div');
                 newRow.innerHTML = `
-                    <input type="text" name="project[]" placeholder="Project Title:">
+                    <input type="text" name="project[]" placeholder="Project Title:" required/>
             <br><br>
-                    <textarea name="description[]" placeholder="Brief description..."></textarea>
+                    <textarea name="description[]" placeholder="Brief description..." required></textarea>
                 <br>
                     <button type="button" onclick="deleteRow(this)">DELETE</button>
                     `;
@@ -210,7 +247,7 @@
         const Trows = document.getElementById('Trows');
             const newRow = document.createElement('div');
                 newRow.innerHTML = `
-                    <input type="text" name="skill[]" placeholder="Skills:">
+                    <input type="text" name="skill[]" placeholder="Skills:" required/>
                     <button type="button" onclick="deleteSkillRow(this)">DELETE</button>
                     `;
                     Trows.appendChild(newRow);
@@ -223,11 +260,11 @@
         const proEdu=document.getElementById('proEdu');
             const newRow=document.createElement('div');
                 newRow.innerHTML=`
-                        <label for="education">Graduation/Post-Graduation/Diploma:</label>
-                        <textarea placeholder="Course" name="education" id="education" required/></textarea>
+                        <label for="education">Higher-Secondary/Graduation/Post-Graduation/Diploma:</label>
+                        <input type="text" placeholder="Course..." name="education" id="education" required/>
                     <br>
-                        <label for="education">College Name:</label>
-                        <textarea placeholder="College Name" name="education" id="education" required/></textarea>
+                        <label for="education">School/College/Institution":</label>
+                        <input type="text" placeholder="Name..." name="education" id="education" required/>
                     <br>
                         <label for="from-date">From:</label>
                         <input type="date" name="from-date" id="from-date" required>
@@ -242,6 +279,21 @@
     function deleteEdu(button){
         button.parentElement.remove();
     }
+// ================================================Language section function========================================================//
+     function addLangRow() {
+        const Lrows = document.getElementById('Lrows');
+            const newRow = document.createElement('div');
+                newRow.innerHTML = `
+                    <input type="text" name="language[]" placeholder="Language:" required/>
+                <br>
+                    <button type="button" onclick="deleteLangRow(this)">DELETE</button>
+                    `;
+                    Lrows.appendChild(newRow);
+    }
+    function deleteLangRow(button){
+        button.parentElement.remove();
+  }
+       
   </script>
 </body>
 </html>

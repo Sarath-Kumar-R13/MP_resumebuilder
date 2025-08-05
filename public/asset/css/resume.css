@@ -82,6 +82,10 @@ fieldset > div {
   margin-bottom: 2rem;
 }
 
-.pro-btn, .pro-btn2, .btn-edu {
+.pro-btn, .pro-btn2, .btn-edu, .pro-btn3, .pro-btn4 {
   text-align: right;
+}
+.pro-btnS{
+  color: rgb(243, 244, 245);
+  background-color: rgb(153, 2, 4);
 }

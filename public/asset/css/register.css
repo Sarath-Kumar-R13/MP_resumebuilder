@@ -7,6 +7,10 @@ form {
   color: hsla(205, 76%, 79%, 0.833);
   /* background: bisque; */
   background-image: url('../Images/PROJECT_IMAGES/registerimg.webp');
+  backdrop-filter: blur(5px);
+  background-attachment: fixed;
+  background-position: center center;
+   background-repeat: no-repeat;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   font-family: 'Verdana Pro SemiBold', sans-serif; 
