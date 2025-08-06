@@ -102,16 +102,7 @@
                     </div> -->
                 </div><br>
 
-                <div class="pro-d4">
-                    <h3>ACHIEVEMENTS</h3>
-
-                    <div class="pro-ach">
-                        <label for="achievements"></label>
-                        <textarea placeholder="Major accomplishments in professional your life" name="achievements" required></textarea>
-                    </div>
-                </div><br>
-
-               <div class="pro-d3">
+                   <div class="pro-d3">
                     <h3>PERSONAL PROJECTS</h3>
                     <div id="rows">
 
@@ -146,20 +137,20 @@
                     <h3>ORGANIZATIONS</h3>
                         <div class="pro-org">
                             <label for="organizations"></label>
-                            <textarea  placeholder="Company/Institution"  name="organizations" id="organization" required></textarea>
+                            <input type="text"  placeholder="Most recent employer..."  name="organizations" required>
                             <br>
                             <label for="from-date">From:</label>
-                            <input type="date" name="from-date" id="from-date" required>
+                            <input type="date" name="from_date" required>
 
                             <label for="to-date">To:</label>
-                            <input type="date" name="to-date" id="to-date" required>
+                            <input type="date" name="to_date"  required>
                         </div>
                 </div>
                 <div class="pro-d7">
                     <h3>CERTIFICATES</h3>
                     <div class="pro-crt">
                         <label for="certificates"></label>
-                        <textarea placeholder="Your Credentials..." name="certificates" id="certificates" minlength="500" required></textarea>
+                        <textarea placeholder="Your Credentials..." name="certificates" minlength="500" required></textarea>
                     </div>
                 </div><br>
 
@@ -261,16 +252,16 @@
             const newRow=document.createElement('div');
                 newRow.innerHTML=`
                         <label for="education">Higher-Secondary/Graduation/Post-Graduation/Diploma:</label>
-                        <input type="text" placeholder="Course..." name="education" id="education" required/>
+                        <input type="text" placeholder="Course..." name="course" required/>
                     <br>
-                        <label for="education">School/College/Institution":</label>
-                        <input type="text" placeholder="Name..." name="education" id="education" required/>
+                        <label for="education">School/College/Institution:</label>
+                        <input type="text" placeholder="Name..." name="institution" required/>
                     <br>
                         <label for="from-date">From:</label>
-                        <input type="date" name="from-date" id="from-date" required>
+                        <input type="date" name="from_date" required>
 
                         <label for="to-date">To:</label>
-                        <input type="date" name="to-date" id="to-date" required>
+                        <input type="date" name="to_date" required>
                     <br>
                         <button type="button" onclick="deleteEdu(this)">DELETE</button>
                         `;
