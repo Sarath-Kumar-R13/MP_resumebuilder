@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RbController;
-use App\Http\Controllers\loginController;
+use App\Http\Controllers\LOGIN_C\loginController;
+use App\Http\Controllers\RESUME_C\PersonalInfoController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -31,3 +32,4 @@ Route::get('/',function(){
  Route::get('/ResV',function(){
     return view('ResumeTemplate.resume');
  });
+ Route::post('/submitRes',[PersonalInfoController::class,'pInfo'])->name('submit');

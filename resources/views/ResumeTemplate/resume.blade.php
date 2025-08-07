@@ -12,7 +12,22 @@
 </head>
 <body>
     <div style="text-align:center";>
-    <form action="{{url('resume')}}" method="POST">
+
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{session('success')}}
+            </div>
+        @endif
+
+        @if($errors->any())
+        <div class="alert alert-error">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    <form action="{{url('resume')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <fieldset>
             <legend style="text-align:center";>ProVitae Resume</legend>
@@ -129,7 +144,7 @@
 
                     <div class="pro-ach">
                         <label for="achievements"></label>
-                        <textarea placeholder="Major accomplishments in professional your life..." name="achievements" id="achievements" minlength="500" required></textarea>
+                        <textarea placeholder="Major accomplishments in professional your life..." name="achievements" id="achievements"  required></textarea>
                     </div>
                 </div><br>
 

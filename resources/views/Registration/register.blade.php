@@ -38,7 +38,7 @@
             <label for="confirm password">Confirm password:</label>
             <input type="password"  id="password" name="confirm_password" required><br><br>
             
-            <button class='btn1' type="register"><span>REGISTER</span></button>
+            <button class='btn1' type="register"><span>REGISTER</span></button> 
      </fieldset>
      </form> 
     </div>
