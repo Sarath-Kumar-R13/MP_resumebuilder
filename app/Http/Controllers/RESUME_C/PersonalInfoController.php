@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PersonalInfoController extends Controller
 {
-    public function mainResume(){
+    public function mainResume1(){
         return view('ResumeTemplate.resume');
     }
     

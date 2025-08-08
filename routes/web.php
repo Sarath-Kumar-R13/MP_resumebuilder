@@ -32,4 +32,5 @@ Route::get('/',function(){
  Route::get('/ResV',function(){
     return view('ResumeTemplate.resume');
  });
+ Route::get('/');
  Route::post('/submitRes',[PersonalInfoController::class,'pInfo'])->name('submit');

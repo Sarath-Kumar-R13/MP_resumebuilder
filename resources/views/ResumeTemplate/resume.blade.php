@@ -26,6 +26,7 @@
                     <li>{{$error}}</li>
                 @endforeach
             </ul>
+            @endif
         </div>
     <form action="{{url('resume')}}" method="POST" enctype="multipart/form-data">
         @csrf
