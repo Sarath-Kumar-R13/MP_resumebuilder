@@ -17,6 +17,18 @@ class WorkExperienceController extends Controller
             'from_date'=>'required|array',
             'to_date'=>'required|array',
         ]);
-    }
     
+     foreach($request->position as $index=>$position){
+            WorkExperienceModel::create([
+                'position'=>$position,
+                'company'=>$request->company[$index],
+                'from_date'=>$request->from_date[$index],
+                'to_date'=>$request->to_date[$index],
+                'work_location'=>$request->to_date[$index],
+            ]);
+    }
+        return back()->with('success','Work experience saved successfully');
+
 }
+}
+
