@@ -20,7 +20,7 @@ class PersonalInfoController extends Controller
                 'phone'=>'required|number|minlength:10',
                 'location'=>'required',
                 'github'=>'nullable|url',
-                'image'=>'nullable|file|max:2048|mimes:jpeg,png,jpg,gif,svg,webp',
+                'image'=>'nullable|file|max:2048|mimes:jpeg,png,jpg,gif,svg,webp'
             ]);
 
     if($request->hasfile('file')){

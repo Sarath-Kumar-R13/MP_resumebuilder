@@ -13,18 +13,28 @@ class WorkExperienceController extends Controller
     public function wExp(Request $request){
         $validated=$request->validate([
             'position'=>'required|array',
+            'position.*'=>'required|string|max:255',
+
             'company'=>'required|array',
+            'company.*'=>'required|string|max:255',
+
             'from_date'=>'required|array',
+            'from_date.*'=>'required|date',
+
             'to_date'=>'required|array',
+            'to_date.*'=>'required|date',
+
+            'work_location'=>'required|array',
+            'work_location.*'=>'required|string|max:255',
         ]);
     
-     foreach($request->position as $index=>$position){
+     foreach($validated['position'] as $index=>$position){
             WorkExperienceModel::create([
                 'position'=>$position,
-                'company'=>$request->company[$index],
-                'from_date'=>$request->from_date[$index],
-                'to_date'=>$request->to_date[$index],
-                'work_location'=>$request->to_date[$index],
+                'company'=>$validated['company'][$index],
+                'from_date'=>$validated['from_date'][$index],
+                'to_date'=>$validated['to_date'][$index],
+                'work_location'=>$validated['work_location'][$index]
             ]);
     }
         return back()->with('success','Work experience saved successfully');
