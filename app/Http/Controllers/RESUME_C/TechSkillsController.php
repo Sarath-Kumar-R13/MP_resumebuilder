@@ -19,7 +19,7 @@ class TechSkillsController extends Controller
 
         foreach($validated['skill'] as $index=>$skill){
             TechSkillsModel::create([
-                'skill'=>$validated['skill'][$index]
+                'skill'=>$skill
             ]);
         }
         return back()->with('success','Skills added successfully');
