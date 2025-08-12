@@ -166,7 +166,7 @@
                     <h3>CERTIFICATES</h3>
                     <div class="pro-crt">
                         <label for="certificates"></label>
-                        <textarea placeholder="Your Credentials..." name="certificates" minlength="500" required></textarea>
+                        <textarea placeholder="Your Credentials..." name="certificates" minlength="50" required></textarea>
                     </div>
                 </div><br>
 

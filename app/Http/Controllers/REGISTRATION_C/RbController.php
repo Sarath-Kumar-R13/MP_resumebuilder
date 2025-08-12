@@ -61,6 +61,7 @@ class RbController extends Controller
     
     
        public function resumeV(){
+        // return back()->with('success','Resume submitted');
         return view('ResumeTemplate.resume');
     }
 }
