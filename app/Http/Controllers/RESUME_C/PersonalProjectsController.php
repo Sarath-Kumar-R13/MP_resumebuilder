@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class PersonalProjectsController extends Controller
 {
-    public function mainResume3(){
-        return view('ResumeTemplate.resume');
-    }
+    // public function mainResume3(){
+    //     return view('ResumeTemplate.resume');
+    // }
 
     public function pPro(Request $request){
         $validated=$request->validate([

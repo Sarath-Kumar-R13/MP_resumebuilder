@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class AchievementsController extends Controller
 {
-    public function mainResume5(){
-        return view('ResumeTemplate.resume');
-    }
+    // public function mainResume5(){
+    //     return view('ResumeTemplate.resume');
+    // }
 
     public function achieve(Request $request){
         $validated=$request->validate([

@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class WorkExperienceController extends Controller
 {
-    public function mainResume2(){
-        return view('ResumeTemplate.resume');
-    }
+    // public function mainResume2(){
+    //     return view('ResumeTemplate.resume');
+    // }
     public function wExp(Request $request){
         $validated=$request->validate([
             'position'=>'required|array',

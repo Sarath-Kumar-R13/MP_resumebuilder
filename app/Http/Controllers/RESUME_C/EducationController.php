@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class EducationController extends Controller
 {
-    public function mainResume8(){
-        return view('ResumeTemplate.resume');
-    }
+    // public function mainResume8(){
+    //     return view('ResumeTemplate.resume');
+    // }
 
     public function eduT(Request $request){
         $validated=$request->validate([

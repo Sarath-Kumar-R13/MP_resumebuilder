@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class LanguageController extends Controller
 {
-    public function mainResume9(){
-        return view('ResumeTemplate.resume');
-    }
+    // public function mainResume9(){
+    //     return view('ResumeTemplate.resume');
+    // }
 
     public function lang(Request $request){
         $validated=$request->validate([
@@ -18,7 +18,7 @@ class LanguageController extends Controller
         ]);
 
         foreach($validated['language'] as $index=>$language){
-            LanguageModel::create([
+            languageModel::create([
                 'language'=>$language
             ]);
         }

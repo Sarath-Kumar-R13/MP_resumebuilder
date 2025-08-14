@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class OrganizationsController extends Controller
 {
-    public function mainResume6(){
-        return view('ResumeTemplate.resume');
-    }
+    // public function mainResume6(){
+    //     return view('ResumeTemplate.resume');
+    // }
 
     public function organ(Request $request){
         $validated=$request->validate([
