@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
-use App\Models\resumeModel;
+use App\Models\REGISTRATION_M\resumeModel;
 
 
 class RbController extends Controller

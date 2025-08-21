@@ -28,7 +28,7 @@
             </ul>
             @endif
         </div>
-    <form action="{{route('personalInf.store')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('mainResume.personalInf.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <fieldset>
             <legend style="text-align:center";>ProVitae Resume</legend>

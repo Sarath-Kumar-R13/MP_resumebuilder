@@ -92,7 +92,7 @@
 }
 .cv-img{
     float: right;
-     margin-right: 160px;
+     margin-right: -50px;
      width: -100px; 
     height: auto; 
      transform: scale(0.8);

@@ -39,7 +39,7 @@
          alt="logo"></a>
       </div>
       <ul class="nav-links">
-        <li class="link"><a href="#">RESUME TEMPLATES</a></li>
+        <li class="link"><a href="{{route('resume.view')}}">RESUME TEMPLATES</a></li>
         <li class="link"><a href="#">CV TEMPLATES</a></li>
         
         <li class="link"><a href="#">COVER LETTERS</a></li>
@@ -78,8 +78,12 @@
             <p>Build your brand-new <br> resume in as little as 5 <br> minutes. <br>
             Try it for free.</p>
             <button class="srt-btn"  style="font-family: 'Bruno Ace SC', sans-serif";>GET STARTED NOW</button>
+            <!-- <span class="cv-img1">
+              <img src="{{asset('asset/Images/PROJECT_IMAGES/SKRimg.png')}}" alt="cv1" srcset="">
+            </span> -->
             <span class="cv-img">
-            <img src="{{ asset('asset/Images/PROJECT_IMAGES/Jun 4, 2025, 03_38_01 PM.png') }}" alt="cv">
+              <img src="{{asset('asset/Images/PROJECT_IMAGES/SKRimg2.0.jpg')}}" alt="cv1" srcset="">&nbsp;&nbsp;&nbsp;
+            <img src="{{ asset('asset/Images/PROJECT_IMAGES/Jun 4, 2025, 03_38_01 PM.png') }}" alt="cv2">
              </span> 
         </div>
        

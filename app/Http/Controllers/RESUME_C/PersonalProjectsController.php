@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\RESUME_C;
 
 use App\Models\RESUME_M\PersonalProjectsModel;
 use Illuminate\Http\Request;
