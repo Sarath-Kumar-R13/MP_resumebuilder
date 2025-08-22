@@ -14,7 +14,7 @@ class PersonalInfoController extends Controller
     
     public function pInfo(Request $request){
             $validated=$request->validate([
-                'name'=>'required|min:5',
+                'name'=>'required|min:1',
                 'job_title'=>'required|min:5',
                 'description'=>'required|min:30',
                 'email'=>'required|email|regex:/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/',

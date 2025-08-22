@@ -42,7 +42,7 @@
 
                     <div class="pro-N">
                         <label for="name">Name:</label>
-                        <input type="text" placeholder="Full Name"  id='name' name='name' minlength='5' required/>
+                        <input type="text" placeholder="Full Name"  id='name' name='name' minlength='1' required/>
                     </div><br>
 
                     <div class="pro-JT">
