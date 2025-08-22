@@ -28,7 +28,7 @@
             </ul>
             @endif
         </div>
-    <form action="{{route('mainResume.personalInf.store')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('mainResume.personalInfo.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <fieldset>
             <legend style="text-align:center";>ProVitae Resume</legend>
@@ -52,7 +52,7 @@
 
                     <div class="pro-SD">
                         <label for="description">Short Description:</label><br>
-                        <textarea name="description" placeholder="Write a short description here..." id="description" required ></textarea>
+                        <textarea name="description" placeholder="Write a short description here..." id="description" minlength='30' required ></textarea>
                     </div><br>
 
                     <div class="pro-Em">
@@ -80,7 +80,7 @@
     </form>
 
             
-    <form action="{{route('workEx.store')}}" method="POST">
+    <form action="{{route('mainResume.workExp.store')}}" method="POST">
         @csrf
                 <div class="pro-d2">
                         <h3>WORK EXPERIENCE</h3>
@@ -119,7 +119,7 @@
                 </div><br>
     </form>
 
-    <form action="{{route('personalPro.store')}}" method="POST">
+    <form action="{{route('mainResume.personalPro.store')}}" method="POST">
         @csrf
                    <div class="pro-d3">
                     <h3>PERSONAL PROJECTS</h3>
@@ -136,7 +136,7 @@
                 </div>
     </form>
 
-    <form action="{{route('techS.store')}}" method="POST">
+    <form action="{{route('mainResume.techSkill.store')}}" method="POST">
         @csrf
                 <div class="pro-d4">
                     <h3>TECHNICAL SKILLS</h3>
@@ -149,7 +149,7 @@
                 </div>
     </form>
 
-    <form action="{{route('achiV.store')}}" method="POST">
+    <form action="{{route('mainResume.achieve.store')}}" method="POST">
         @csrf
                  <div class="pro-d5">
                     <h3>ACHIEVEMENTS</h3>
@@ -161,7 +161,7 @@
                 </div><br>
     </form>
 
-    <form action="{{route('organize.store')}}" method="POST">
+    <form action="{{route('mainResume.organ.store')}}" method="POST">
         @csrf
                 <div class="pro-d6">
                     <h3>ORGANIZATIONS</h3>
@@ -178,7 +178,7 @@
                 </div>
     </form>
 
-    <form action="{{route('certify.store')}}" method="POST">
+    <form action="{{route('mainResume.certif.store')}}" method="POST">
         @csrf
                 <div class="pro-d7">
                     <h3>CERTIFICATES</h3>
@@ -189,7 +189,7 @@
                 </div><br>
     </form>
 
-    <form action="{{route('education.store')}}" method="POST">
+    <form action="{{route('mainResume.edu.store')}}" method="POST">
         @csrf
                 <div class="pro-d8">
                     <h3>EDUCATION</h3>
@@ -212,7 +212,7 @@
                 </div>
     </form>
 
-    <form action="{{route('language.store')}}" method="POST">
+    <form action="{{route('mainResume.lang.store')}}" method="POST">
         @csrf
                 <div class="pro-d9">
                     <h3>LANGUAGES</h3>

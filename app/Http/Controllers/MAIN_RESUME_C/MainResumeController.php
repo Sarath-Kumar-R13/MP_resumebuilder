@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\MAIN_RESUME_C;
+use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
@@ -28,8 +29,8 @@ class MainResumeController extends Controller
         $lang=LanguageModel::all();
 
         return view('ResumeTemplate.resume',compact(
-            'personalInf','workExp','personalPro','techS',
-            'achiV','organize','certify','education','language'
+            'personalInfo','workExp','personalPro','techSkill',
+            'achieve','organ','certif','edu','lang'
         ));
     }
 }

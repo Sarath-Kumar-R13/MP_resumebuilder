@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\LOGIN_M;
 
 use Illuminate\Database\Eloquent\Model;
 

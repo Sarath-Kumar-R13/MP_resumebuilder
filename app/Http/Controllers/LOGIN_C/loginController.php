@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\LOGIN_C;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Http\Request;
 
-use App\Http\Controllers\loginController;
+use App\Http\Controllers\loginModel;
 
 class loginController extends Controller
 {

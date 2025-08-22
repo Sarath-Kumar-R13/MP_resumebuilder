@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\RESUME_M;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\RESUME_C;
-
+use App\Http\Controllers\Controller;
 use App\Models\RESUME_M\WorkExperienceModel;
 use Illuminate\Http\Request;
 

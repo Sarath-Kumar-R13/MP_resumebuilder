@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\RESUME_Cs;
+use App\Http\Controllers\Controller;
 
 use App\Models\RESUME_M\CertificatesModel;
 use Illuminate\Http\Request;

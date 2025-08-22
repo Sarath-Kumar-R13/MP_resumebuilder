@@ -36,7 +36,7 @@
             <input type="password" placeholder="Password" id="password" name="password" minlength='8' required ><br><br>
 
             <label for="confirm password">Confirm password:</label>
-            <input type="password"  id="password" name="confirm_password" required><br><br>
+            <input type="password"  id="password" name="password_confirmation" required><br><br>
             
             <button class='btn1' type="register"><span>REGISTER</span></button> 
      </fieldset>

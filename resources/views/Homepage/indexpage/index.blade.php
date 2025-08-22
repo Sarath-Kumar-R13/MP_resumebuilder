@@ -132,6 +132,7 @@
    <section class="sec-2">
         <h1 class="sec3-h1">
           <span style="color:maroon";>R</span>ecruiters <span style="color:maroon";>L</span>ove <span style="color:maroon";>O</span>ur <span style="color:maroon";>R</span>esume <span style="color:maroon";>B</span>uilder. <span style="color:maroon";>L</span>earn <span style="color:maroon";>W</span>hy <span style="color:maroon";>B</span>elow.</h1>
+          
         <div class="container-1">
           <h2 class="sec3-h2" style="font-family: 'Bruno Ace SC', sans-serif";>Resume Templates For Every Career Path</h2>
           <p class="pg-sec">You can pick one of our handcrafted resume templates above.yoe <br>

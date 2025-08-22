@@ -61,13 +61,13 @@ Route::get('/resume',[MainResumeController::class,'mainResume'])->name('resume.v
 
  //==================================Personal info=========================================//
  
- Route::post('/mainResume/personalInf',[PersonalInfoController::class,'pInfo'])->name('mainResume.personalInf.store');
+ Route::post('/mainResume/personalInfo',[PersonalInfoController::class,'pInfo'])->name('mainResume.personalInfo.store');
 
 //   Route::post('/mainResume/personalInf',[PerInfController::class,'pInfo'])->name('mainResume.personalInf.store');
 
  //==============================Work experience===========================================//
 
- Route::post('/mainResume/workEx',[WorkExperienceController::class,'wExp'])->name('mainResume.workEx.store');
+ Route::post('/mainResume/workExp',[WorkExperienceController::class,'wExp'])->name('mainResume.workExp.store');
 
  //=====================================Personal Projects====================================//
 
@@ -75,24 +75,24 @@ Route::get('/resume',[MainResumeController::class,'mainResume'])->name('resume.v
 
  //======================================Tech skills=========================================//
 
- Route::post('/mainResume/techS',[TechSkillsController::class,'tSkills'])->name('mainResume.techS.store');
+ Route::post('/mainResume/techSkill',[TechSkillsController::class,'tSkills'])->name('mainResume.techSkill.store');
 
  //=======================================Achievements=======================================//
 
- Route::post('mainResume/achiV',[AchievementsController::class,'achieve'])->name('mainResume.achiV.store');
+ Route::post('mainResume/achieve',[AchievementsController::class,'achieve'])->name('mainResume.achieve.store');
 
  //=======================================Organizations====================================//
 
- Route::post('mainResume/organize',[OrganizationsController::class,'organ'])->name('mainResume.organize.store');
+ Route::post('mainResume/organ',[OrganizationsController::class,'organ'])->name('mainResume.organ.store');
 
  //=======================================Certificates=====================================//
 
- Route::post('mainResume/certify',[CertificatesController::class,'certF'])->name('mainResume.certify.store');
+ Route::post('mainResume/certif',[CertificatesController::class,'certF'])->name('mainResume.certif.store');
 
  //=======================================Education========================================//
 
- Route::post('mainResume/education',[EducationController::class,'eduT'])->name('mainResume.education.store');
+ Route::post('mainResume/edu',[EducationController::class,'eduT'])->name('mainResume.edu.store');
 
  //=======================================language=========================================//
 
- Route::post('mainResume/language',[LanguageController::class,'lang'])->name('mainResume.language.store');
+ Route::post('mainResume/lang',[LanguageController::class,'lang'])->name('mainResume.lang.store');
