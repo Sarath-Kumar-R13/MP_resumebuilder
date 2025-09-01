@@ -28,7 +28,9 @@
             </ul>
             @endif
         </div>
-    <form action="{{route('mainResume.personalInfo.store')}}" method="POST" enctype="multipart/form-data">
+     <!-- <form action="{{route('mainResume.view')}}" method="GET" enctype="multipart/form-data">
+        @csrf   -->
+    <form action="{{route('mainResume.view')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <fieldset>
             <legend style="text-align:center";>ProVitae Resume</legend>
@@ -75,13 +77,14 @@
                         <label for="github">GitHub:</label>
                         <input type="text" placeholder="https://github.com/yourusername" name="github" id="github">
                    </div><br>
-
+                    
                 </div><br>
-    </form>
+                    <button class='btn1' type="submit">Attach</button>
+    <!-- </form> -->
 
             
-    <form action="{{route('mainResume.workExp.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.workExp.store')}}" method="POST">
+        @csrf -->
                 <div class="pro-d2">
                         <h3>WORK EXPERIENCE</h3>
                         <div id="WERows">
@@ -116,11 +119,13 @@
                         <label for="work location">Work Location:</label>
                         <input type="text" placeholder="Work Location" name="work_location" id="work location" />
                     </div> -->
+                    
                 </div><br>
-    </form>
+                    <button class='btn2' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.personalPro.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.personalPro.store')}}" method="POST">
+        @csrf -->
                    <div class="pro-d3">
                     <h3>PERSONAL PROJECTS</h3>
                     <div id="rows">
@@ -134,10 +139,11 @@
                                 <button type="button" onclick="addProjectRow()">ADD PROJECTS</button>
                             </div>
                 </div>
-    </form>
+                <button class='btn3' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.techSkill.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.techSkill.store')}}" method="POST">
+        @csrf -->
                 <div class="pro-d4">
                     <h3>TECHNICAL SKILLS</h3>
                         <div id="Trows">
@@ -147,10 +153,11 @@
                                 <button type="button" onclick="addSkillRow()">ADD SKILLS</button>
                             </div>
                 </div>
-    </form>
+                    <button class='btn4' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.achieve.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.achieve.store')}}" method="POST">
+        @csrf -->
                  <div class="pro-d5">
                     <h3>ACHIEVEMENTS</h3>
 
@@ -159,10 +166,11 @@
                         <textarea placeholder="Major accomplishments in professional your life..." name="achievements" id="achievements"  required></textarea>
                     </div>
                 </div><br>
-    </form>
+                    <button class='btn5' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.organ.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.organ.store')}}" method="POST">
+        @csrf -->
                 <div class="pro-d6">
                     <h3>ORGANIZATIONS</h3>
                         <div class="pro-org">
@@ -176,10 +184,11 @@
                             <input type="date" name="to_date"  required>
                         </div>
                 </div>
-    </form>
+                    <button class='btn6' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.certif.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.certif.store')}}" method="POST">
+        @csrf -->
                 <div class="pro-d7">
                     <h3>CERTIFICATES</h3>
                     <div class="pro-crt">
@@ -187,10 +196,11 @@
                         <textarea placeholder="Your Credentials..." name="certificates" minlength="50" required></textarea>
                     </div>
                 </div><br>
-    </form>
+                    <button class='btn7' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.edu.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.edu.store')}}" method="POST">
+        @csrf -->
                 <div class="pro-d8">
                     <h3>EDUCATION</h3>
                     <div id="proEdu">
@@ -210,10 +220,11 @@
                             <button type="button" onclick="addEduRow()">ADD EDUCATION</button>
                         </div>
                 </div>
-    </form>
+                    <button class='btn8' type="submit">Attach</button>
+    <!-- </form> -->
 
-    <form action="{{route('mainResume.lang.store')}}" method="POST">
-        @csrf
+    <!-- <form action="{{route('mainResume.lang.store')}}" method="POST">
+        @csrf -->
                 <div class="pro-d9">
                     <h3>LANGUAGES</h3>
                     <div id="Lrows">
@@ -223,10 +234,12 @@
                             <button type="button" onclick="addLangRow()">ADD LANGUAGE</button>
                         </div>
                 </div>
-    </form>
+                <button class='btn9' type="submit">Attach</button>
+    <!-- </form> -->
                 <button class='pro-btnS' type="submit"><span>SUBMIT</span></button>
         </fieldset>
     </div>
+    </form> 
     <script>
     //====================================Work Experience section function=====================================//
     function addWERow(){

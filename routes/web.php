@@ -54,7 +54,7 @@ Route::get('/',function(){
 
  //==============================Main resume view========================================//
 
-Route::get('/resume',[MainResumeController::class,'mainResume'])->name('resume.view');
+Route::get('/mainResume',[MainResumeController::class,'mainResume'])->name('mainResume.view');
 // Route::get('/mainResume',function(){
 //     return view('Resumetemplate.resume');
 // });
