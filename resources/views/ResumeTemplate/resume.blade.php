@@ -28,9 +28,8 @@
             </ul>
             @endif
         </div>
-     <!-- <form action="{{route('mainResume.view')}}" method="GET" enctype="multipart/form-data">
-        @csrf   -->
-    <form action="{{route('mainResume.view')}}" method="POST" enctype="multipart/form-data">
+     
+    <form action="{{route('resume.storeData)}}" method="POST" enctype="multipart/form-data">
         @csrf
         <fieldset>
             <legend style="text-align:center";>ProVitae Resume</legend>
@@ -80,11 +79,7 @@
                     
                 </div><br>
                     <button class='btn1' type="submit">Attach</button>
-    <!-- </form> -->
-
-            
-    <!-- <form action="{{route('mainResume.workExp.store')}}" method="POST">
-        @csrf -->
+    
                 <div class="pro-d2">
                         <h3>WORK EXPERIENCE</h3>
                         <div id="WERows">
@@ -122,10 +117,7 @@
                     
                 </div><br>
                     <button class='btn2' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.personalPro.store')}}" method="POST">
-        @csrf -->
+  
                    <div class="pro-d3">
                     <h3>PERSONAL PROJECTS</h3>
                     <div id="rows">
@@ -140,10 +132,7 @@
                             </div>
                 </div>
                 <button class='btn3' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.techSkill.store')}}" method="POST">
-        @csrf -->
+    
                 <div class="pro-d4">
                     <h3>TECHNICAL SKILLS</h3>
                         <div id="Trows">
@@ -154,10 +143,7 @@
                             </div>
                 </div>
                     <button class='btn4' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.achieve.store')}}" method="POST">
-        @csrf -->
+   
                  <div class="pro-d5">
                     <h3>ACHIEVEMENTS</h3>
 
@@ -167,10 +153,7 @@
                     </div>
                 </div><br>
                     <button class='btn5' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.organ.store')}}" method="POST">
-        @csrf -->
+   
                 <div class="pro-d6">
                     <h3>ORGANIZATIONS</h3>
                         <div class="pro-org">
@@ -185,10 +168,7 @@
                         </div>
                 </div>
                     <button class='btn6' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.certif.store')}}" method="POST">
-        @csrf -->
+   
                 <div class="pro-d7">
                     <h3>CERTIFICATES</h3>
                     <div class="pro-crt">
@@ -197,10 +177,7 @@
                     </div>
                 </div><br>
                     <button class='btn7' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.edu.store')}}" method="POST">
-        @csrf -->
+   
                 <div class="pro-d8">
                     <h3>EDUCATION</h3>
                     <div id="proEdu">
@@ -221,10 +198,7 @@
                         </div>
                 </div>
                     <button class='btn8' type="submit">Attach</button>
-    <!-- </form> -->
-
-    <!-- <form action="{{route('mainResume.lang.store')}}" method="POST">
-        @csrf -->
+   
                 <div class="pro-d9">
                     <h3>LANGUAGES</h3>
                     <div id="Lrows">
@@ -235,7 +209,7 @@
                         </div>
                 </div>
                 <button class='btn9' type="submit">Attach</button>
-    <!-- </form> -->
+    
                 <button class='pro-btnS' type="submit"><span>SUBMIT</span></button>
         </fieldset>
     </div>

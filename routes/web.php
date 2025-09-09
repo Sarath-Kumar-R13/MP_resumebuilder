@@ -15,7 +15,7 @@ use App\Http\Controllers\RESUME_C\AchievementsController;
 use App\Http\Controllers\RESUME_C\OrganizationsController;
 use App\Http\Controllers\RESUME_C\CertificatesController;
 use App\Http\Controllers\RESUME_C\EducationController;
-use App\Http\Controller\RESUME_C\LanguageController;
+use App\Http\Controllers\RESUME_C\LanguageController;
 
 // use App\Http\Controllers\RESUME_C\PerInfController;
 
@@ -48,13 +48,15 @@ Route::get('/',function(){
 
  //=========================RESUME======================================//
 
-//  Route::get('/ResV',function(){
-//     return view('ResumeTemplate.resume');
-//  });
+ Route::get('/ResV',function(){
+    return view('ResumeTemplate.resume');
+ });
 
  //==============================Main resume view========================================//
 
-Route::get('/mainResume',[MainResumeController::class,'mainResume'])->name('mainResume.view');
+Route::get('/Resumetemplate/resume',[MainResumeController::class,'mainResume'])->name('Resumetemplate.resume');
+// Route::post('/Resumetemplate/resume',[MainResumeController::class,'mainResume']);
+Route::post('/resume/store-Data',[MainResumeController::class,'storeData'])->name('resume.storeData');
 // Route::get('/mainResume',function(){
 //     return view('Resumetemplate.resume');
 // });
